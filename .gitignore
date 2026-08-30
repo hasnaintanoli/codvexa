@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# IDEs & Editor files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Codvexa Local Test Exports
+routes.json
+discovered.json
+*.json.tmp
