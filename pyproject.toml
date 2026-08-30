@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Hasnain Ali", email = "hasnaintanoli@example.com" }
+    { name = "Hasnain Ali", email = "codvexa.dev@gmail.com" }
 ]
 keywords = ["ast", "static-analysis", "express", "api", "routes", "tree-sitter", "developer-tool", "cli"]
 classifiers = [
