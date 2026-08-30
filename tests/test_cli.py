@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from typer.testing import CliRunner
 
+from codvexa import __version__
 from codvexa.cli import app
 
 runner = CliRunner()
@@ -15,7 +16,7 @@ SAMPLE_API_DIR = Path(__file__).parent.parent / "examples" / "sample-api"
 def test_cli_version():
     result = runner.invoke(app, ["--version"])
     assert result.exit_code == 0
-    assert "Codvexa v0.1.0" in result.stdout
+    assert f"Codvexa v{__version__}" in result.stdout
 
 
 def test_cli_help():
@@ -28,7 +29,7 @@ def test_cli_help():
 def test_cli_scan_sample_api():
     result = runner.invoke(app, ["scan", str(SAMPLE_API_DIR)])
     assert result.exit_code == 0
-    assert "Codvexa v0.1.0" in result.stdout
+    assert f"Codvexa v{__version__}" in result.stdout
     assert "API routes found:" in result.stdout
     assert "GET" in result.stdout
     assert "/health" in result.stdout
@@ -40,7 +41,7 @@ def test_cli_scan_json_output():
     result = runner.invoke(app, ["scan", str(SAMPLE_API_DIR), "--json"])
     assert result.exit_code == 0
     data = json.loads(result.stdout)
-    assert data["codvexa_version"] == "0.1.0"
+    assert data["codvexa_version"] == __version__
     assert data["project"] == "sample-api"
     assert data["framework"] == "Express"
     assert data["routes_found"] > 0

@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "codvexa"
-version = "0.1.0"
+version = "0.1.1"
 description = "Understand the architecture behind your code. Automatic API route discovery for JavaScript & TypeScript backend projects."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Hasnain Ali", email = "codvexa.dev@gmail.com" }
+    { name = "Hasnain Ali" },
+    { email = "codvexa.dev@gmail.com" },
 ]
 keywords = ["ast", "static-analysis", "express", "api", "routes", "tree-sitter", "developer-tool", "cli"]
 classifiers = [

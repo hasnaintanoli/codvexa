@@ -1,10 +1,7 @@
-"""
-Tests for JSON export formatting and file serialization.
-"""
-
 import json
 from pathlib import Path
 
+from codvexa import __version__
 from codvexa.exporters.json_export import export_to_json_file, export_to_json_string
 from codvexa.models.route import ProjectInfo, Route, ScanResult
 
@@ -45,7 +42,7 @@ def test_json_export_string():
     json_str = export_to_json_string(scan_result)
     data = json.loads(json_str)
 
-    assert data["codvexa_version"] == "0.1.0"
+    assert data["codvexa_version"] == __version__
     assert data["project"] == "my-api"
     assert data["framework"] == "Express"
     assert data["files_scanned"] == 42
