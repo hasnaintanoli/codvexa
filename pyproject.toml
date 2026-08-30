@@ -43,6 +43,13 @@ dev = [
     "pytest-cov>=4.0.0",
 ]
 
+[project.urls]
+Homepage = "https://github.com/hasnaintanoli/codvexa"
+Documentation = "https://github.com/hasnaintanoli/codvexa#readme"
+Repository = "https://github.com/hasnaintanoli/codvexa.git"
+Issues = "https://github.com/hasnaintanoli/codvexa/issues"
+Changelog = "https://github.com/hasnaintanoli/codvexa/blob/main/CHANGELOG.md"
+
 [project.scripts]
 codvexa = "codvexa.cli:app"
 

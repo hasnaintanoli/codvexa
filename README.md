@@ -2,10 +2,11 @@
 
 > **Understand the architecture behind your code.**
 
+[![PyPI version](https://img.shields.io/pypi/v/codvexa.svg)](https://pypi.org/project/codvexa/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/hasnaintanoli/codvexa/actions/workflows/ci.yml/badge.svg)](https://github.com/hasnaintanoli/codvexa/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Tree-sitter](https://img.shields.io/badge/Parser-Tree--sitter-orange.svg)](https://tree-sitter.github.io/tree-sitter/)
-[![Status](https://img.shields.io/badge/Release-v0.1.0-brightgreen.svg)]()
 
 **Codvexa** is an open-source static code analysis and architecture visualization tool for backend applications. It analyzes backend source code to help engineering teams understand their API architecture, routing surfaces, and architectural dependencies.
 
