@@ -1,0 +1,12 @@
+{
+  "name": "sample-api",
+  "version": "1.0.0",
+  "description": "Sample Express API for Codvexa demonstration",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
